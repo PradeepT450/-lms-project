@@ -1,4 +1,19 @@
 
+const searchInput = document.getElementById("course-search");
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.trim().toLowerCase();
+
+  const filteredCourses = courses.filter((course) => {
+    return (
+      course.title.toLowerCase().includes(query) ||
+      course.description.toLowerCase().includes(query) ||
+      course.instructor.toLowerCase().includes(query)
+    );
+  });
+
+  displayCourses(filteredCourses);
+});
 const courses = [
   {
     title: "Web Development",
