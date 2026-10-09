@@ -1,0 +1,2 @@
+# Project Description
+    The Learning Management System (LMS) includes requirement analysis, course and content management, video streaming, quizzes and assignments, progress tracking, integration and testing, and deployment.
